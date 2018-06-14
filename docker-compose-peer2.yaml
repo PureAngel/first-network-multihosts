@@ -13,7 +13,7 @@ networks:
 
 services:
 
-  peer1.org1.example.com:
+  peer0.org2.example.com:
     container_name: peer0.org2.example.com
     extends:
       file:  base/docker-compose-base.yaml
