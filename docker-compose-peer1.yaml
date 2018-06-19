@@ -21,6 +21,8 @@ services:
       service: peer0.org1.example.com
     extra_hosts:
      - "orderer.example.com:10.138.0.2"
+    networks:
+     - byfn
 
   cli:
     container_name: cli
@@ -52,3 +54,5 @@ services:
      - "orderer.example.com:10.138.0.2"
      - "peer0.org1.example.com:10.138.0.3"
      - "peer0.org2.example.com:10.138.0.4"
+    networks:
+     - byfn

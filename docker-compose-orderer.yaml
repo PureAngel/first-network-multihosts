@@ -18,3 +18,5 @@ services:
       file:   base/docker-compose-base.yaml
       service: orderer.example.com
     container_name: orderer.example.com
+    networks:
+     - byfn
